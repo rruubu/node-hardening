@@ -1,0 +1,11 @@
+Host router
+    HostName 127.0.0.1
+    User opilane
+    IdentityFile ~/.ssh/id_ed25519
+    StrictHostKeyChecking accept-new
+Host lan-b
+    HostName 127.0.0.1
+    User opilane
+    ProxyJump router
+    IdentityFile ~/.ssh/id_ed25519
+    StrictHostKeyChecking accept-new

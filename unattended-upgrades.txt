@@ -1,0 +1,155 @@
+/etc/apt/apt.conf.d/50unattended-upgrades:Unattended-Upgrade::Allowed-Origins {
+/etc/apt/apt.conf.d/50unattended-upgrades:Unattended-Upgrade::Package-Blacklist {
+/etc/apt/apt.conf.d/50unattended-upgrades:Unattended-Upgrade::DevRelease "auto";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::AutoFixInterruptedDpkg "true";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::MinimalSteps "true";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::InstallOnShutdown "false";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Mail "";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::MailReport "on-change";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Remove-Unused-Dependencies "false";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Automatic-Reboot "false";
+/etc/apt/apt.conf.d/50unattended-upgrades:// when Unattended-Upgrade::Automatic-Reboot is set to true
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Automatic-Reboot-WithUsers "true";
+/etc/apt/apt.conf.d/50unattended-upgrades://Unattended-Upgrade::Automatic-Reboot-Time "02:00";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::SyslogEnable "false";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::SyslogFacility "daemon";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::OnlyOnACPower "true";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Skip-Updates-On-Metered-Connections "true";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Verbose "false";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Debug "false";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Allow-downgrade "false";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Allow-APT-Mark-Fallback "true";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Postpone-For-Days "0";
+/etc/apt/apt.conf.d/50unattended-upgrades:// Unattended-Upgrade::Postpone-Wait-Time "300";
+/etc/apt/apt.conf.d/20auto-upgrades:APT::Periodic::Unattended-Upgrade "1";
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Unattended-Upgrade "1";
+### dry run
+adjusting candidate to version systemd-cryptsetup=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: systemd-resolved=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version systemd-resolved=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: systemd-sysv=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version systemd-sysv=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: tmux=3.6a-2ubuntu0.2 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version tmux=3.6a-2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-insights=0.9.3ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-insights=0.9.3ubuntu in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-minimal=1.570.4 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-minimal=1.570 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-pro-client=38ubuntu0~26.04 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-pro-client=37.2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-pro-client-l10n=38ubuntu0~26.04 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-pro-client-l10n=37.2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-release-upgrader-core=1:26.04.27 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-release-upgrader-core=1:26.04.18 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: ubuntu-wsl=1.570.4 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version ubuntu-wsl=1.570 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: udev=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version udev=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+Checking: wsl-setup=0.6.3ubuntu~26.04.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+adjusting candidate to version wsl-setup=0.6.2ubuntu in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+pkgs that look like they should be upgraded: 
+Fetched 0 B in 0s (0 B/s)                                                       
+fetch.run() result: 0
+Packages blacklist due to conffile prompts: []
+No packages found that can be upgraded unattended and no pending auto-removals
+The list of kept packages can't be calculated in dry-run mode.
+upgrade result: True No packages found that can be upgraded unattended and no pending auto-removals
+### real run
+Checking if system is running on battery is skipped. Please install powermgmt-base package to check power status and skip installing updates when the system is running on battery.
+Starting unattended upgrades script
+Allowed origins are: o=Ubuntu,a=resolute, o=Ubuntu,a=resolute-security, o=UbuntuESMApps,a=resolute-apps-security, o=UbuntuESM,a=resolute-infra-security
+Initial blacklist: 
+Initial whitelist (not strict): 
+No packages found that can be upgraded unattended and no pending auto-removals
+### journal
+May 12 11:43:10 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+May 12 11:43:10 K-B302-23-05 unattended-upgrade-shutdown[235]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+May 12 11:43:10 K-B302-23-05 unattended-upgrade-shutdown[235]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+May 12 11:46:49 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+-- Boot a93503a58ec8431c981606b63bcf933d --
+Sep 18 09:06:13 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Sep 18 09:06:13 K-B302-23-05 unattended-upgrade-shutdown[313]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Sep 18 09:06:13 K-B302-23-05 unattended-upgrade-shutdown[313]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Sep 18 09:44:19 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+-- Boot 5a537f9debfb45cbbd95e1e219683b36 --
+Oct 15 09:46:59 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 15 09:46:59 K-B302-23-05 unattended-upgrade-shutdown[257]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 15 09:46:59 K-B302-23-05 unattended-upgrade-shutdown[257]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 15 09:47:45 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+-- Boot 9c87818152214879bef6a0a38f0bf8f7 --
+Oct 16 09:43:05 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 16 09:43:05 K-B302-23-05 unattended-upgrade-shutdown[276]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 16 09:43:05 K-B302-23-05 unattended-upgrade-shutdown[276]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 16 09:46:29 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+-- Boot baf4c52c54a54a219905375570fcf7d8 --
+Oct 23 08:48:21 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 23 08:48:21 K-B302-23-05 unattended-upgrade-shutdown[275]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 23 08:48:21 K-B302-23-05 unattended-upgrade-shutdown[275]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 23 08:49:11 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+-- Boot 06a88902abf649b98233f5446158a62a --
+Oct 23 08:54:21 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 23 08:54:21 K-B302-23-05 unattended-upgrade-shutdown[273]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 23 08:54:21 K-B302-23-05 unattended-upgrade-shutdown[273]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 23 08:55:34 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+Oct 23 08:55:44 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 23 08:55:44 K-B302-23-05 unattended-upgrade-shutdown[223]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 23 08:55:44 K-B302-23-05 unattended-upgrade-shutdown[223]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 23 08:56:02 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+Oct 23 08:56:31 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 23 08:56:32 K-B302-23-05 unattended-upgrade-shutdown[213]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 23 08:56:32 K-B302-23-05 unattended-upgrade-shutdown[213]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+Oct 23 08:57:05 K-B302-23-05 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+Oct 23 08:57:58 K-B302-23-05 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Oct 23 08:57:58 K-B302-23-05 unattended-upgrade-shutdown[210]: /usr/share/unattended-upgrades/unattended-upgrade-shutdown:250: PyGIDeprecationWarning: GLib.unix_signal_add is deprecated; use GLibUnix.signal_add instead
+Oct 23 08:57:58 K-B302-23-05 unattended-upgrade-shutdown[210]:   GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, sig,
+### log file
+2026-10-23 09:06:11,589 DEBUG Checking: software-properties-common=0.120.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,589 DEBUG adjusting candidate to version software-properties-common=0.120 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,598 DEBUG Checking: systemd=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,599 DEBUG adjusting candidate to version systemd=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,607 DEBUG Checking: systemd-cryptsetup=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,608 DEBUG adjusting candidate to version systemd-cryptsetup=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,616 DEBUG Checking: systemd-resolved=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,617 DEBUG adjusting candidate to version systemd-resolved=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,624 DEBUG Checking: systemd-sysv=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,625 DEBUG adjusting candidate to version systemd-sysv=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,634 DEBUG Checking: tmux=3.6a-2ubuntu0.2 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,635 DEBUG adjusting candidate to version tmux=3.6a-2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,643 DEBUG Checking: ubuntu-insights=0.9.3ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,644 DEBUG adjusting candidate to version ubuntu-insights=0.9.3ubuntu in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,651 DEBUG Checking: ubuntu-minimal=1.570.4 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,651 DEBUG adjusting candidate to version ubuntu-minimal=1.570 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,659 DEBUG Checking: ubuntu-pro-client=38ubuntu0~26.04 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,660 DEBUG adjusting candidate to version ubuntu-pro-client=37.2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,667 DEBUG Checking: ubuntu-pro-client-l10n=38ubuntu0~26.04 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,668 DEBUG adjusting candidate to version ubuntu-pro-client-l10n=37.2ubuntu0.1 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,678 DEBUG Checking: ubuntu-release-upgrader-core=1:26.04.27 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,679 DEBUG adjusting candidate to version ubuntu-release-upgrader-core=1:26.04.18 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,690 DEBUG Checking: ubuntu-wsl=1.570.4 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,691 DEBUG adjusting candidate to version ubuntu-wsl=1.570 in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,699 DEBUG Checking: udev=259.9-0ubuntu0.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,700 DEBUG adjusting candidate to version udev=259.5-0ubuntu3.4 in allowed origin [<Origin component:'main' archive:'resolute-security' origin:'Ubuntu' label:'Ubuntu' site:'security.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,710 DEBUG Checking: wsl-setup=0.6.3ubuntu~26.04.1 ([<Origin component:'main' archive:'resolute-updates' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>])
+2026-10-23 09:06:11,710 DEBUG adjusting candidate to version wsl-setup=0.6.2ubuntu in allowed origin [<Origin component:'main' archive:'resolute' origin:'Ubuntu' label:'Ubuntu' site:'archive.ubuntu.com' isTrusted:True>, <Origin component:'now' archive:'now' origin:'' label:'' site:'' isTrusted:False>]
+2026-10-23 09:06:11,740 DEBUG pkgs that look like they should be upgraded: 
+2026-10-23 09:06:11,748 DEBUG fetch.run() result: 0
+2026-10-23 09:06:11,769 DEBUG Packages blacklist due to conffile prompts: []
+2026-10-23 09:06:11,769 INFO No packages found that can be upgraded unattended and no pending auto-removals
+2026-10-23 09:06:11,769 INFO The list of kept packages can't be calculated in dry-run mode.
+2026-10-23 09:06:11,772 DEBUG upgrade result: True No packages found that can be upgraded unattended and no pending auto-removals
+2026-10-23 09:06:11,897 INFO Checking if system is running on battery is skipped. Please install powermgmt-base package to check power status and skip installing updates when the system is running on battery.
+2026-10-23 09:06:11,899 INFO Starting unattended upgrades script
+2026-10-23 09:06:11,899 INFO Allowed origins are: o=Ubuntu,a=resolute, o=Ubuntu,a=resolute-security, o=UbuntuESMApps,a=resolute-apps-security, o=UbuntuESM,a=resolute-infra-security
+2026-10-23 09:06:11,899 INFO Initial blacklist: 
+2026-10-23 09:06:11,899 INFO Initial whitelist (not strict): 
+2026-10-23 09:06:12,892 INFO No packages found that can be upgraded unattended and no pending auto-removals
+### timers
+NEXT                         LEFT LAST                               PASSED UNIT                    ACTIVATES
+Fri 2026-10-23 20:46:53 EEST  11h Tue 2026-05-12 11:43:09 EEST            - apt-daily.timer         apt-daily.service
+Sat 2026-10-24 06:06:16 EEST  21h Fri 2026-10-23 09:03:18 EEST 2min 54s ago apt-daily-upgrade.timer apt-daily-upgrade.service
+
+2 timers listed.
+Pass --all to see loaded but inactive timers, too.

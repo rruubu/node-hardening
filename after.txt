@@ -1,0 +1,45 @@
+State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess                                                  
+LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=1783,fd=18))              
+LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*                                                            
+LISTEN 0      4096          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=19936,fd=3),("systemd",pid=1,fd=134))
+LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=1783,fd=20))              
+LISTEN 0      4096             [::]:22           [::]:*    users:(("sshd",pid=19936,fd=4),("systemd",pid=1,fd=135))
+  UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+  chrony.service              loaded active running chrony, an NTP client/server
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  getty@tty1.service          loaded active running Getty on tty1
+  networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd
+  packagekit.service          loaded active running PackageKit Daemon
+  polkit.service              loaded active running Authorization Manager
+  rsyslog.service             loaded active running System Logging Service
+  ssh.service                 loaded active running OpenBSD Secure Shell server
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  user@0.service              loaded active running User Manager for UID 0
+  user@1000.service           loaded active running User Manager for UID 1000
+  wsl-pro.service             loaded active running Bridge to Ubuntu Pro agent on Windows
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+17 loaded units listed.
+626
+/usr/bin/passwd
+/usr/bin/su
+/usr/bin/fusermount3
+/usr/bin/sudo.ws
+/usr/bin/chfn
+/usr/bin/umount
+/usr/bin/mount
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/lib/landscape/apt-update
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/cargo/bin/su
+/usr/lib/cargo/bin/sudo
